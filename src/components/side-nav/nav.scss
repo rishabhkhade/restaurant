@@ -1,0 +1,57 @@
+.nav-parent {
+    width: 150px;
+    height: 100vh;
+    border-right: 1px solid rgba(0, 0, 0, 0.281);
+    background: var(--accent4);
+    position: fixed;
+    top: 8%;
+
+    .nav-cont {
+        width: 80px;
+        height: 100%;
+        margin-right: 20px;
+
+
+        .nav-bar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: calc(var(--unit)*2);
+            padding: 24px 0px;
+
+
+            .home,
+            .menu,
+            .payment,
+            .order,
+            .setting {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: var(--unit);
+                text-transform: uppercase;
+
+                svg {
+                    font-size: calc(var(--unit)*2 - 4px);
+                    color: var(--accent2);
+
+                    &:hover {
+                        color: var(--accent);
+                        cursor: pointer;
+                    }
+                }
+
+                &:hover {
+                    color: var(--accent);
+                    cursor: pointer;
+
+                }
+            }
+.nav-text{
+    color: black;
+}
+        }
+    }
+}

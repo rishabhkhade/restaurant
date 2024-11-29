@@ -1,0 +1,35 @@
+.bottom-nav-parent {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+
+    .bottom-nav-cont {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px 20px;
+        // border-radius: 8px 8px 0px 0px;
+        background-color: var(--accent4);
+        // background: rgba(0, 0, 0, 0.459);
+        // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        // backdrop-filter: blur(4px);
+        // -webkit-backdrop-filter: blur(4px);
+        // border: 1px solid rgba(255, 255, 255, 0.18);
+
+        .small-box {
+            background-color: var(--white);
+            padding: 15px 30px;
+            border-radius: 8px;
+            color: var(--black);
+            box-shadow: var(--shadow);
+
+            &.active{
+                background-color: var(--accent3);
+            }
+        }
+
+       
+    }
+}

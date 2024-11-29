@@ -1,0 +1,81 @@
+.header-parent {
+    background: var(--accent);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px var(--unit);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+
+    .logo-search {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: calc(var(--unit) * 2);
+        padding: calc(var(--unit)/2) 0px;
+
+
+        .logo {
+            background: url('./assets/food_logo.jpg');
+            height: 100%;
+            width: 150px;
+
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            input {
+                height: 45px;
+                width: 300px;
+                background-color: var(--accent4);
+                border-radius: calc(var(--unit)/2);
+                border: none;
+                padding: 0px 6px;
+
+            }
+
+            svg {
+                color: var(--accent2);
+                position: absolute;
+                top: 50%;
+                right: 5%;
+                transform: translate(-50%, -50%);
+                font-size: 20px;
+            }
+        }
+    }
+
+    .date-time {
+        height: 100%;
+        width: auto;
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--unit);
+        padding: var(--unit);
+        margin: 0px var(--unit);
+
+        .date,
+        .time {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: calc(var(--unit)/2);
+
+            svg {
+                font-size: calc(var(--unit) * 2);
+            }
+        }
+
+
+
+    }
+}
